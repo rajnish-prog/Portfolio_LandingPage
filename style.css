@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+}
+
+#wrapperload{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#wrapperload .elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #efefef; */
+}
+
+#wrapperload .elem img{
+    width: 50%;
+}
+
+#wrapperload .elem:nth-child(1){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#wrapperload .elem:nth-child(2){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+
+#wrapperload .elem:nth-child(3){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+
+@keyframes anim{
+    to{
+        margin-top: -100px;
+    }
+}
+
+@keyframes anim2{
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+nav{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 150px;
+}
+
+nav #link{
+    display: flex;
+    align-items: center;
+}
+nav #link a{
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+    opacity: .7;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+nav #link i{
+    margin-left: 50px;
+}
+nav #link a:nth-child(2){
+    opacity: .5;
+}
+
+#section{
+    display: flex;
+    width: 100%;
+    height: calc(100%-80px);
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+}
+
+#left #smline{
+    width: 50px;
+    height: 3px;
+    background-color: black;
+}
+
+#left h4{
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#left h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: url(https://media.istockphoto.com/id/1408387701/photo/social-media-marketing-digitally-generated-image-engagement.jpg?s=612x612&w=0&k=20&c=VVAxxwhrZZ7amcPYJr08LLZJTyoBVMN6gyzDk-4CXos=);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#left>h5{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: #a49999;
+}
+#left>h5 span{
+    color: rgb(9, 211, 234);
+}
+
+#playbtn img{
+    width: 80px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+#playbtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#playbtn h5{
+    margin-top: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    opacity: .9;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+
+#contacts{
+    margin-top: 200px;
+}
+#contacts h3{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: .8;
+    font-weight: 800;
+}
+#contacts h6{
+    margin-top: 7px;
+    font-size: 12px;
+}
+#contacts h6 span{
+    color: rgb(4, 198, 247);
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+}
+#right img{
+    width: 100%;
+}
+
+#splash{
+    left: -60px;
+    top: 70%;
+    position: absolute;
+    width: 150px;
+}
